@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6670919848437414362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5119278547301234013}
+  - component: {fileID: 8361315427654402918}
+  - component: {fileID: 5577386218561687515}
+  - component: {fileID: 2122408588043281909}
+  - component: {fileID: 5104896617549252631}
+  - component: {fileID: 3570772137330966785}
+  m_Layer: 0
+  m_Name: room
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5119278547301234013
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6670919848437414362}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.9091682, y: 9.607133, z: -8.960489}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8361315427654402918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6670919848437414362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd7984bfa5a2ff048affe4dfac970f24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exitBlockPrefab: {fileID: 252324097482382023, guid: ac9d4cacee0b3b846a6090becfab8cc1, type: 3}
+  blockPrefab: {fileID: 3010687855872199861, guid: 639c53ffde34cf540b32beb5c95171ca, type: 3}
+  roomEnterTrigger: {fileID: 2586011946300470565, guid: f7cdffe3784c292478185171879b8324, type: 3}
+  floorPrefab: {fileID: 2914487144641020235, guid: 53e8203256de3c34787e0eac4f8ce296, type: 3}
+  wallTorchPrefab: {fileID: 3919164199974425480, guid: 301fc9ad956208640926723dee78302c, type: 3}
+  maxQuantityOfRows: 30
+  minQuantityOfRows: 20
+  rows: 0
+  colomns: 0
+  horCondition: 0
+  wallSprites:
+  - {fileID: 5663061954668274717, guid: 455c59ffb74c9b246a165bc573d94c0f, type: 3}
+  - {fileID: 6007627129536956325, guid: 455c59ffb74c9b246a165bc573d94c0f, type: 3}
+  - {fileID: -7486092956772349302, guid: 455c59ffb74c9b246a165bc573d94c0f, type: 3}
+  - {fileID: -3627264120405484348, guid: 455c59ffb74c9b246a165bc573d94c0f, type: 3}
+  - {fileID: -4815885190406460031, guid: 455c59ffb74c9b246a165bc573d94c0f, type: 3}
+  - {fileID: 7477116942032994148, guid: 455c59ffb74c9b246a165bc573d94c0f, type: 3}
+  - {fileID: -396035294860175646, guid: 455c59ffb74c9b246a165bc573d94c0f, type: 3}
+  - {fileID: 8233071653059976297, guid: 455c59ffb74c9b246a165bc573d94c0f, type: 3}
+  - {fileID: -7775419718026629507, guid: 455c59ffb74c9b246a165bc573d94c0f, type: 3}
+  - {fileID: -781294158744790408, guid: 455c59ffb74c9b246a165bc573d94c0f, type: 3}
+  - {fileID: 9061651696941551919, guid: 455c59ffb74c9b246a165bc573d94c0f, type: 3}
+  - {fileID: -6985117363303071740, guid: 455c59ffb74c9b246a165bc573d94c0f, type: 3}
+  floorSprites:
+  - {fileID: 8642771837104280003, guid: 455c59ffb74c9b246a165bc573d94c0f, type: 3}
+  - {fileID: -1762573714345474896, guid: 455c59ffb74c9b246a165bc573d94c0f, type: 3}
+  - {fileID: 11442893378838041, guid: 455c59ffb74c9b246a165bc573d94c0f, type: 3}
+  - {fileID: -3642208251427772964, guid: 455c59ffb74c9b246a165bc573d94c0f, type: 3}
+  startPos: {x: 0, y: 0}
+  hasShop: 0
+  playerEnteredTheRoom: 0
+  enemiesSpawned: 0
+--- !u!114 &5577386218561687515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6670919848437414362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32fb62617c59f4d42b8aba30afe466d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entityPrefabs:
+  - {fileID: 6767220367061466416, guid: 02eeba99ef30d834d8111f84a071279e, type: 3}
+  - {fileID: 4141105783313420396, guid: dfa003ee8a1e3274f9df133f93e33ed3, type: 3}
+  - {fileID: 2256337974342047112, guid: 9e457fc09ecb412429f4acf50144a76a, type: 3}
+--- !u!114 &2122408588043281909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6670919848437414362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c51c6d7943a2d04c9e1bd289f63e0a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entityPrefabs:
+  - {fileID: 7693856438987042356, guid: 9db466a6a60ecb24aa259f1008df8ca2, type: 3}
+  - {fileID: 8655812784817620852, guid: 8f1c67b015fdf424989c1b7937d04501, type: 3}
+  - {fileID: 5604787548574889913, guid: c1674d65ce06d0544b61b51149f9f7dc, type: 3}
+  - {fileID: 2915755803288867330, guid: 2e0444c41a2d04b4ca6aa1ef27e986e4, type: 3}
+  - {fileID: 5137865395681570657, guid: 9b9976500d20a4844967a0d0e20d74fb, type: 3}
+  - {fileID: 7575898070671401851, guid: bd12d42f45bbed341aabde5bcb9b8afc, type: 3}
+  enemies: []
+  spawnMarkPrefab: {fileID: 479511224295198719, guid: 1360b120ec576414a986ca7f66beda9e, type: 3}
+  miniBossSpawnMarkPrefab: {fileID: 7378459232033349565, guid: cb7e235c020560447a7c12ec009178ad, type: 3}
+  avalibleQuantityOfWaves: 0
+--- !u!114 &5104896617549252631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6670919848437414362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e2b6559ad710f34b9bf51cb1bc5faf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entityPrefabs:
+  - {fileID: 5244687665159108696, guid: 6d59a1063cc2933408aa27a686bc772f, type: 3}
+  shopFlagPrefab: {fileID: 4958743391956847553, guid: 733ecd17386f1aa4fa316079243fb1c8, type: 3}
+--- !u!114 &3570772137330966785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6670919848437414362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6074a0cd895d94f4799972ff89dca9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entityPrefabs: []

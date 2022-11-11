@@ -1,0 +1,33 @@
+{
+    "name": "inventory",
+    "maps": [
+        {
+            "name": "basis",
+            "id": "bfe54af8-ca7c-49db-a09b-19e5fd5ffb4e",
+            "actions": [
+                {
+                    "name": "Open",
+                    "type": "Button",
+                    "id": "ec71974f-4a91-4b6b-8fc7-d0ff50c2ae70",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "0c817317-2e92-4f28-9cde-88fd730f656f",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Open",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
